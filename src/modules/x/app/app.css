@@ -1,0 +1,13 @@
+:host {
+    --mainColor: #ff6f12;
+    --secondaryColor: #474c55;
+    
+    font-family: 'Ubuntu', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

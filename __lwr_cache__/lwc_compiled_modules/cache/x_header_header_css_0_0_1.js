@@ -1,0 +1,6 @@
+function stylesheet(useActualHostSelector, token) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  return ["nav", shadowSelector, " {display: flex;flex-direction: column;justify-content: flex-start;align-items: center;background-color: var(--secondaryColor);width: 100vw;transition: height 2s ease-in-out;}.top", shadowSelector, " {display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100vw;}.hamburgerLine", shadowSelector, " {height: 5px;width: 35px;margin: 3px;background-color: var(--mainColor);}.hamburger", shadowSelector, " {margin: 2vh;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}img", shadowSelector, " {max-width: 150px;margin: 15px;}.selected", shadowSelector, "{height: 100vh;align-items: flex-start;}.menuItem", shadowSelector, " {display: none;}.showMenuItems", shadowSelector, " {display: block;margin: 5vh auto;color: white;font-size: 2rem;cursor: pointer;}"].join('');
+}
+export default [stylesheet];

@@ -1,0 +1,54 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    width: 100vw;
+    transition: height 2s ease-in-out;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.hamburgerLine {
+    height: 5px;
+    width: 35px;
+    margin: 3px;
+    background-color: var(--mainColor);
+}
+
+.hamburger {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    max-width: 150px;
+    margin: 15px;
+}
+
+.selected{
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.menuItem {
+    display: none;
+}
+
+.showMenuItems {
+    display: block;
+    margin: 5vh auto;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
